@@ -1,13 +1,16 @@
-<head>
-  <title>FindYourGift</title>
-</head>
+<template name="ApplicationLayout">
+  <head>
+    <title>FindYourGift</title>
+  </head>
 
-<body>
-  {{> navbar}}
-  {{> HomePage}}
-  {{> Footer}}
-  
-</body>
+  <body>
+    {{> yield "navbar"}}
+    {{> yield "main"}}
+    {{> yield "footer"}}
+    
+  </body>
+</template>
+
 
 <template name="navbar">
        <div class="navbar navbar-default" role="navigation">
@@ -48,12 +51,21 @@
     <div class="item"><img src="HomeCarouselMarketPlace.png" alt=""></div>   
   </div>
 
+
   <div class="row">
     <p>Welcome to FindYourGift.com. If you are looking for a present for a special someone, then you came to the right place. You know what he/she loves, but need a hand to make this a reality, people registered on the site can help you.</p>
 
-    <button></button>
+    <div class="col-xs-6">
+      <button type="button" class="btn btn-primary btn-block">Look for an original present</button>
+    </div>
+
+    <div class="col-xs-6">
+      <button type="button" class="btn btn-primary btn-block">Offer customizable products</button>
+    </div>  
 
   </div>
+  
+  <br>
 
   <div class="row">
     <div class="col-xs-9">
@@ -72,7 +84,93 @@
 
     <div class="col-xs-3">
         <h3>Testimonials</h3>
-        <p>This is a great idea!</p>
+        <p>Fred<br>"This is a great idea!"</p>
+        <br>
+        <p>Alice<br>"My mum absolutely loved the present made thanks to this site!"</p>
+    </div>
+  </div>
+
+</template>
+
+<template name="BrowsePage">
+
+  <div class="row">
+    <p>Welcome to FindYourGift.com. If you are looking for a present for a special someone, then you came to the right place. You know what he/she loves, but need a hand to make this a reality, people registered on the site can help you.</p>
+
+  </div>
+  
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="CarouselProducts" class="owl-carousel owl-theme">   
+        <div class="item"><img src="Example_product.png" alt=""></div>
+        <div class="item"><img src="Example_product1.png" alt=""></div>
+        <div class="item"><img src="Example_product.png" alt=""></div> 
+        <div class="item"><img src="Example_product1.png" alt=""></div>
+        <div class="item"><img src="Example_product.png" alt=""></div>
+        <div class="item"><img src="Example_product1.png" alt=""></div>  
+        <div class="item"><img src="Example_product.png" alt=""></div>
+        <div class="item"><img src="Example_product1.png" alt=""></div>
+        <div class="item"><img src="Example_product.png" alt=""></div>    
+      </div>
+    </div>
+  </div>
+
+</template>
+
+<template name="OfferPage">
+
+  <div class="row">
+    <p>Thanks for choosing findyourgift.com to share your talents. You can describe which products you have to offer in the box below, as well as upload pictures.</p>
+
+  </div>
+  
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Placeholder text box</p>
+    </div>
+  </div>
+
+</template>
+
+
+<template name="drawingPage">
+
+  <div class="row">
+    <p>Thanks for choosing findyourgift.com to share your talents. You can describe which products you have to offer in the box below, as well as upload pictures.</p>
+
+  </div>
+  
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Placeholder drawing app</p>
+    </div>
+  </div>
+
+</template>
+
+
+<template name="profilePage">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Placeholder profile</p>
+    </div>
+  </div>
+
+</template>
+
+
+<template name="Help">
+
+  <div class="row">
+    <div class="col-xs-12">
+      <p>Placeholder FAQs</p>
     </div>
   </div>
 

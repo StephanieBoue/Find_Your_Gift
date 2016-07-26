@@ -21,4 +21,11 @@ body{
   display: block;
   width: 100%;
   height: auto;
+  background: #42bdc2;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  height: 60px;
+  background-color: #000000;
 }
