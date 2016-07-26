@@ -8,8 +8,17 @@ body{
 }
 
 
-#owl-demo .item img{
+#homeCarousel .item img{
     display: block;
     width: 100%;
     height: auto;
+}
+
+#CarouselProducts .item{
+  margin: 3px;
+}
+#CarouselProducts .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
