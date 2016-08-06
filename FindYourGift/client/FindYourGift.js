@@ -99,7 +99,7 @@ Router.route('/offer', function () {
 
 // 'drawing' page
 Router.route('/drawing', function () {
-  console.log("you hit / ");
+  console.log("you hit /drawing ");
   this.render("navbar", {to:"navbar"});
   this.render("drawingPage", {to:"main"}); 
   this.render("footer", {to:"footer"});   
@@ -107,7 +107,7 @@ Router.route('/drawing', function () {
 
 // 'profile' page
 Router.route('/profile', function () {
-  console.log("you hit / ");
+  console.log("you hit /profile ");
   this.render("navbar", {to:"navbar"});
   this.render("profilePage", {to:"main"}); 
   this.render("footer", {to:"footer"});   
@@ -119,4 +119,18 @@ Router.route('/help', function () {
   this.render("navbar", {to:"navbar"});
   this.render("Help", {to:"main"}); 
   this.render("footer", {to:"footer"});   
+});
+
+
+// Tempalte helpers
+
+Template.profilePage.helpers({username:function(){
+if (Meteor.user()){
+  return Meteor.user().username;
+    //return Meteor.user().emails[0].address;
+}
+else {
+  return "anonymous internet user";
+}
+}
 });

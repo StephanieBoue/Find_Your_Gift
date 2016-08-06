@@ -4,10 +4,11 @@
   </head>
 
   <body>
+    <div id="wrapper">
     {{> yield "navbar"}}
     {{> yield "main"}}
     {{> yield "footer"}}
-    
+    </div>
   </body>
 </template>
 
@@ -45,143 +46,170 @@
 </template>
 
 <template name="HomePage">
-  <div id="homeCarousel" class="owl-carousel owl-theme">   
-    <div class="item"><img src="HomeCarousel_Find.png" alt=""></div>
-    <div class="item"><img src="HomeCarousel_Offer.png" alt=""></div>
-    <div class="item"><img src="HomeCarouselMarketPlace.png" alt=""></div>   
-  </div>
-
-
-  <div class="row">
-    <p>Welcome to FindYourGift.com. If you are looking for a present for a special someone, then you came to the right place. You know what he/she loves, but need a hand to make this a reality, people registered on the site can help you.</p>
-
-    <div class="col-xs-6">
-      <button type="button" class="btn btn-primary btn-block">Look for an original present</button>
+  <div id="content" class="container">
+    <div id="homeCarousel" class="owl-carousel owl-theme">   
+      <div class="item"><img src="HomeCarousel_Find.png" alt=""></div>
+      <div class="item"><img src="HomeCarousel_Offer.png" alt=""></div>
+      <div class="item"><img src="HomeCarouselMarketPlace.png" alt=""></div>   
     </div>
 
-    <div class="col-xs-6">
-      <button type="button" class="btn btn-primary btn-block">Offer customizable products</button>
-    </div>  
 
-  </div>
-  
-  <br>
+    <div class="row
+    ">
+      <p>Welcome to FindYourGift.com. If you are looking for a present for a special someone, then you came to the right place. You know what he/she loves, but need a hand to make this a reality, people registered on the site can help you.</p>
 
-  <div class="row">
-    <div class="col-xs-9">
-      <div id="CarouselProducts" class="owl-carousel owl-theme">   
-        <div class="item"><img src="Example_product.png" alt=""></div>
-        <div class="item"><img src="Example_product1.png" alt=""></div>
-        <div class="item"><img src="Example_product.png" alt=""></div> 
-        <div class="item"><img src="Example_product1.png" alt=""></div>
-        <div class="item"><img src="Example_product.png" alt=""></div>
-        <div class="item"><img src="Example_product1.png" alt=""></div>  
-        <div class="item"><img src="Example_product.png" alt=""></div>
-        <div class="item"><img src="Example_product1.png" alt=""></div>
-        <div class="item"><img src="Example_product.png" alt=""></div>    
+      <div class="col-xs-6">
+        <a href="browse"><button type="button" class="btn btn-home btn-block">Look for an original present</button></a>
+      </div>
+
+      <div class="col-xs-6">
+        <a href="offer"><button type="button" class="btn btn-home btn-block">Offer customizable products</button></a>
+      </div>  
+
+    </div>
+    
+    <br>
+
+    <div class="row">
+      <div class="col-xs-9">
+        <div id="CarouselProducts" class="owl-carousel owl-theme">   
+          <div class="item"><img src="Example_product.png" alt=""></div>
+          <div class="item"><img src="Example_product1.png" alt=""></div>
+          <div class="item"><img src="Example_product.png" alt=""></div> 
+          <div class="item"><img src="Example_product1.png" alt=""></div>
+          <div class="item"><img src="Example_product.png" alt=""></div>
+          <div class="item"><img src="Example_product1.png" alt=""></div>  
+          <div class="item"><img src="Example_product.png" alt=""></div>
+          <div class="item"><img src="Example_product1.png" alt=""></div>
+          <div class="item"><img src="Example_product.png" alt=""></div>    
+        </div>
+      </div>
+
+      <div class="col-xs-3">
+          <h3>Testimonials</h3>
+          <p>Fred<br>"This is a great idea!"</p>
+          <br>
+          <p>Alice<br>"My mum absolutely loved the present made thanks to this site!"</p>
       </div>
     </div>
-
-    <div class="col-xs-3">
-        <h3>Testimonials</h3>
-        <p>Fred<br>"This is a great idea!"</p>
-        <br>
-        <p>Alice<br>"My mum absolutely loved the present made thanks to this site!"</p>
-    </div>
   </div>
-
 </template>
 
 <template name="BrowsePage">
+  <div id="content" class="container">
+    <div class="row">
+      <p>Welcome to FindYourGift.com. If you are looking for a present for a special someone, then you came to the right place. You know what he/she loves, but need a hand to make this a reality, people registered on the site can help you.</p>
 
-  <div class="row">
-    <p>Welcome to FindYourGift.com. If you are looking for a present for a special someone, then you came to the right place. You know what he/she loves, but need a hand to make this a reality, people registered on the site can help you.</p>
+    </div>
+    
+    <br>
 
-  </div>
-  
-  <br>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <div id="CarouselProducts" class="owl-carousel owl-theme">   
-        <div class="item"><img src="Example_product.png" alt=""></div>
-        <div class="item"><img src="Example_product1.png" alt=""></div>
-        <div class="item"><img src="Example_product.png" alt=""></div> 
-        <div class="item"><img src="Example_product1.png" alt=""></div>
-        <div class="item"><img src="Example_product.png" alt=""></div>
-        <div class="item"><img src="Example_product1.png" alt=""></div>  
-        <div class="item"><img src="Example_product.png" alt=""></div>
-        <div class="item"><img src="Example_product1.png" alt=""></div>
-        <div class="item"><img src="Example_product.png" alt=""></div>    
+    <div class="row">
+      <div class="col-xs-12">
+        <div id="CarouselProducts" class="owl-carousel owl-theme">   
+          <div class="item"><img src="Example_product.png" alt=""></div>
+          <div class="item"><img src="Example_product1.png" alt=""></div>
+          <div class="item"><img src="Example_product.png" alt=""></div> 
+          <div class="item"><img src="Example_product1.png" alt=""></div>
+          <div class="item"><img src="Example_product.png" alt=""></div>
+          <div class="item"><img src="Example_product1.png" alt=""></div>  
+          <div class="item"><img src="Example_product.png" alt=""></div>
+          <div class="item"><img src="Example_product1.png" alt=""></div>
+          <div class="item"><img src="Example_product.png" alt=""></div>    
+        </div>
       </div>
     </div>
   </div>
-
 </template>
 
 <template name="OfferPage">
+  <div id="content" class="container">
+    <div class="row">
+      <p>Thanks for choosing findyourgift.com to share your talents. You can describe which products you have to offer in the box below, as well as upload pictures.</p>
 
-  <div class="row">
-    <p>Thanks for choosing findyourgift.com to share your talents. You can describe which products you have to offer in the box below, as well as upload pictures.</p>
-
-  </div>
-  
-  <br>
-
-  <div class="row">
-    <div class="col-xs-12">
-      <p>Placeholder text box</p>
     </div>
-  </div>
+    
+    <br>
 
+    <div class="row pagesection">
+      <div>
+        <p>Placeholder text box</p>
+      </div>
+    </div>
+</div>
 </template>
 
 
 <template name="drawingPage">
+  <div id="content" class="container">
+    <div class="row">
+      <p>This page allows collective drawing so that buyer and seller can discuss design ideas.</p>
+      <p>If you reload the page, the drawing will be lost, and to start a new drawing, you should press "Clear".</p>
+      <p>When drawing with lines, double click to start redrawing at a new point, otherwise, the drawing continues from the previous point.</p>
+    </div>
+    
+    <br>
 
-  <div class="row">
-    <p>Thanks for choosing findyourgift.com to share your talents. You can describe which products you have to offer in the box below, as well as upload pictures.</p>
+    <div>
+      <button class='clear'>Clear</button>
+    <!--   <button class='save' id="link">Save as SVG</button> -->
+     <button class='save'><a href=""  id="link" download="filename.svg" target="_blank">Save as SVG</a></button>
+      <button class='line block1'>Line</button>
+      <button class='thicker block1'>Thicker</button>
+      <button class='thinner block1'>Thinner</button>
+      <button class='circle block2'>Circle</button>
+      <button class='larger block2'>Larger</button>
+      <button class='smaller block2'>Smaller</button>
 
-  </div>
-  
-  <br>
+       <div class="col-xl-3 col-md-3 col-xs-6 input-group demo2">
+            <input type="text" value="#000000" class="form-control" />
+            <span class="input-group-addon"><i></i></span>
+        </div>
 
-  <div class="row">
-    <div class="col-xs-12">
-      <p>Placeholder drawing app</p>
+            <script>
+            $(function(){
+                $('.demo2').colorpicker();
+            });
+        </script>
+    {{> canvas}}
     </div>
   </div>
-
 </template>
 
 
-<template name="profilePage">
+<template name="canvas">
+  <div id='canvas'></div>
+</template>
 
+
+
+<template name="profilePage">
+<div id="content" class="container">
   <div class="row">
-    <div class="col-xs-12">
-      <p>Placeholder profile</p>
+    <div>
+      <h1>Hello and welcome in your profile page {{username}}!</h1>
     </div>
   </div>
-
+</div>
 </template>
 
 
 <template name="Help">
-
+<div id="content" class="container">
   <div class="row">
-    <div class="col-xs-12">
+    <div>
       <p>Placeholder FAQs</p>
     </div>
   </div>
-
+</div>
 </template>
 
 
 <template name="footer">
   <div id="footer">
     <div class="container">
-      <p align="left"><a href="http://www.iconarchive.com/show/character-icons-by-martin-berube.html">People icons designed by Martin Berube</a></p>
+      <h4 id="text-footer">About FindYourGift.com</h4>
+      <p align="left" id="text-footer">All content of the site is copyrighted.</p>
     </div>
   </div>
 </template>
-
