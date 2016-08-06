@@ -80,7 +80,13 @@ body{
 }
 
 
-button, input, optgroup, select, textarea {
+button, input, optgroup, textarea {
+    margin: 0;
+    font: inherit;
+    color: #000000;
+}
+
+.select-dropdown{
     margin: 0;
     font: inherit;
     color: #000000;
@@ -107,6 +113,17 @@ button, input, optgroup, select, textarea {
     border: 5px solid #fff;
     font-size: 16px;
 }
+
+#login-ProfileType, input, optgroup, select, textarea{
+    margin: 20px;
+    padding: 10px;
+    font: inherit;
+    color: #fff;
+    border-radius: 10px;
+    border: 5px solid #fff;
+    font-size: 16px;
+}
+
 
 .block1{
   background: #9cf0f0;

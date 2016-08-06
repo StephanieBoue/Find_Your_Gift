@@ -8,12 +8,12 @@ Meteor.methods({
 
 Meteor.startup(function(){
 if (Images.find().count() == 0){
-	for (var i=1;i<8;i++){
+	for (var i=1;i<14;i++){
 		Images.insert(
 			{
 				img_src:"Products/Product"+i+".png",
 				img_alt:"Creation"+i,
-				User:"Stephanie"
+				createdBy:"5WvBfhpjbT9qtW7Jd"
 			}
 		);	
 	}// end of for insert images

@@ -74,8 +74,9 @@
         <div class="row">
           <div class="col-xs-9">
             <div id="CarouselProducts" class="owl-carousel owl-theme">   
-              <div class="item"><img src="Products/Product1.png" alt=""></div>
-              <div class="item"><img src="Products/Product2.png" alt=""></div>
+              <div class="item"><img src="Products/Product8.png" alt=""></div>
+              <div class="item"><img src="Products/Product9.png" alt=""></div>
+              <div class="item"><img src="Products/Product10.png" alt=""></div>
               <div class="item"><img src="Products/Product3.png" alt=""></div> 
               <div class="item"><img src="Products/Product4.png" alt=""></div>
               <div class="item"><img src="Products/Product5.png" alt=""></div>
@@ -156,7 +157,7 @@
 
       <div class="container js-container" >
         {{#if currentUser}}
-        <button class="btn btn-success js-show-image-form">add image</button>
+        <button class="btn btn-success js-show-image-form">add creation</button>
         {{/if}}
 
         <div class="modal fade" id="image_add_form">
@@ -260,6 +261,11 @@
       <div class="row">
         <div>
           <h1>Hello and welcome in your profile page {{nickname}}!</h1>
+          <br>
+          <img src={{avatar}}>
+          <h2>You have set up a profile as {{profileType}}</h2>
+          <br>
+          <p>Stay tuned...more info to come in your profile in the near Future!</p>
         </div>
       </div>
     </div>

@@ -121,15 +121,35 @@ Router.route('/help', function () {
 
 // Template helpers
 
-Template.profilePage.helpers({nickname:function(){
-  if (Meteor.user()){
-    return Meteor.user().profile.Nickname;
-      //return Meteor.user().emails[0].address;
-  }
-  else {
-    return "anonymous internet user";
-  }
-  }
+Template.profilePage.helpers({
+
+  nickname:function(){
+    if (Meteor.user()){
+      return Meteor.user().profile.Nickname;
+        //return Meteor.user().emails[0].address;
+    }
+    else {
+      return "anonymous internet user";
+    }
+    },
+  profileType:function(){
+    if (Meteor.user()){
+      return Meteor.user().profile.ProfileType;
+        //return Meteor.user().emails[0].address;
+    }
+    else {
+      return "anonymous internet user";
+    }
+  },
+  avatar:function(){
+    if (Meteor.user()){
+      return Meteor.user().profile.avatar;
+        //return Meteor.user().emails[0].address;
+    }
+    else {
+      return "anonymous internet user";
+    }
+  },
 });
 
 
